@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hotelsgo/core/custom_box_decoration.dart';
 import 'package:hotelsgo/core/text_styles.dart';
-import 'package:hotelsgo/features/main_feature/presentation/Widgets/hotel_form_row.dart';
-import 'package:hotelsgo/features/main_feature/presentation/Widgets/icrement_and_decrement_button.dart';
 import 'package:hotelsgo/features/main_feature/presentation/Widgets/number_of_rooms_row.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/room_one_container.dart';
 import 'package:hotelsgo/features/main_feature/presentation/Widgets/second_secreen_title.dart';
 
 class SecondScreen extends StatelessWidget {
@@ -20,25 +19,37 @@ class SecondScreen extends StatelessWidget {
         children: [
           const SecondScreenTitle(),
           const NumberOfRoomsRow(),
+          const Room1Container(),
           Container(
             decoration: AppBoxDecorationsStyles.boxDecoration,
-            margin: const EdgeInsets.symmetric(horizontal: 20),
+            margin: const EdgeInsets.all(20),
             padding: const EdgeInsets.all(20),
-            child: Column(
+            child: Row(
               mainAxisSize: MainAxisSize.max,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  'Room 1',
-                  style: AppTextStyles.secondScreenSectionTextStyle,
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          'Pet-friendly',
+                          style: AppTextStyles.secondScreenNormalTextStyle,
+                        ),
+                        const Icon(Icons.info_outline)
+                      ],
+                    ),
+                    Text(
+                      'Only shows stays that allow pets',
+                      style: AppTextStyles.secondScreenHintTextStyle,
+                    )
+                  ],
                 ),
-                const SizedBox(height: 25),
-                const HotelFormRow(title: 'Adults', number: 4),
-                const SizedBox(height: 25),
-                const HotelFormRow(title: 'Children', number: 2),
+                ElevatedButton(onPressed: () {}, child: const Text(''))
               ],
             ),
-          ),
+          )
         ],
       ),
     );

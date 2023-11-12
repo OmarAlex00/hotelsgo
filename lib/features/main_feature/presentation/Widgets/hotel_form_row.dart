@@ -19,7 +19,7 @@ class HotelFormRow extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppTextStyles.secondScreenSectionTextStyle,
+          style: AppTextStyles.secondScreenNormalTextStyle,
         ),
         const Spacer(),
         const IncrementAndDecrementButton(
