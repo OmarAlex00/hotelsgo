@@ -24,7 +24,7 @@ class FirstScreenMainView extends StatelessWidget {
       child: Column(
         children: [
           const Spacer(
-            flex: 30,
+            flex: 10,
           ),
           const FirstScreenTitle(),
           Container(
