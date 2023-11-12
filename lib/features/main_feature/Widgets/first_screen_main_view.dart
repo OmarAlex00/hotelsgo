@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hotelsgo/core/constants.dart';
 
-class FirstScreenContent extends StatelessWidget {
-  const FirstScreenContent({
+class FirstScreenMainView extends StatelessWidget {
+  const FirstScreenMainView({
     super.key,
   });
 

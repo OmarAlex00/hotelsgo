@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/first_screen_content.dart';
+import 'package:hotelsgo/features/main_feature/Widgets/first_screen_main_view.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -7,7 +7,7 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: FirstScreenContent(),
+      body: FirstScreenMainView(),
     );
   }
 }
