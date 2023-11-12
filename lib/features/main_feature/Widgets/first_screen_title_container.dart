@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotelsgo/core/text_styles.dart';
 import 'package:hotelsgo/features/main_feature/Widgets/trapezoid_container.dart';
 
 class FirstScreenTitle extends StatelessWidget {
@@ -8,19 +9,33 @@ class FirstScreenTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Stack(
-      children: [
-        TrapezoidContainer(
-          width: 255,
-          height: 100,
-          color: Colors.white,
+    return Padding(
+      padding: const EdgeInsets.only(left: 25, bottom: 5),
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Stack(
+          children: [
+            const TrapezoidContainer(
+              width: 202,
+              height: 60,
+              color: Colors.white,
+            ),
+            const TrapezoidContainer(
+              width: 200,
+              height: 60,
+              color: Color(0xff196CBA),
+            ),
+            Positioned(
+              left: 10,
+              top: 20,
+              child: Text(
+                'Hotels Search',
+                style: AppTextStyles.titleTextStyle,
+              ),
+            )
+          ],
         ),
-        TrapezoidContainer(
-          width: 250,
-          height: 100,
-          color: Color(0xff196CBA),
-        ),
-      ],
+      ),
     );
   }
 }

@@ -36,8 +36,8 @@ class TrapezoidClipper extends CustomClipper<Path> {
     Path path = Path()
       ..lineTo(size.width * 0.25, 0) // Top left corner
       ..lineTo(size.width * 0.75, 0) // Top right corner
-      ..lineTo(size.width, size.height * 0.75) // Bottom right corner
-      ..lineTo(0, size.height * 0.75) // Bottom left corner
+      ..lineTo(size.width, size.height * 1) // Bottom right corner
+      ..lineTo(0, size.height * 1) // Bottom left corner
       ..close(); // Close the path to create the desired shape
 
     return path;

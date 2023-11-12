@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotelsgo/core/text_styles.dart';
 
 class CustomDateRange extends StatelessWidget {
   const CustomDateRange({super.key});
@@ -6,9 +7,20 @@ class CustomDateRange extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only(top: 10, right: 10, left: 10),
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8), color: Colors.white),
       child: Container(
-        child: const Row(
+        padding:
+            const EdgeInsets.only(left: 50, right: 10, top: 10, bottom: 10),
+        decoration: BoxDecoration(
+            border: Border.all(
+                color: const Color(0xff2473BD), style: BorderStyle.solid),
+            borderRadius: BorderRadius.circular(8)),
+        child: Row(
           mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               mainAxisSize: MainAxisSize.max,
@@ -16,16 +28,22 @@ class CustomDateRange extends StatelessWidget {
               children: [
                 Text(
                   '2023-11-10',
-                  style: TextStyle(),
+                  style: AppTextStyles.dateTextStyle,
                 ),
-                SizedBox(
-                  width: 50,
+                const SizedBox(
+                  width: 10,
                 ),
-                Text('==>'),
-                Text('2023-11-11'),
+                Text('==>', style: AppTextStyles.dateTextStyle),
+                const SizedBox(
+                  width: 10,
+                ),
+                Text('2023-11-11', style: AppTextStyles.dateTextStyle),
               ],
             ),
-            Icon(Icons.close)
+            const Icon(
+              Icons.close,
+              color: Colors.grey,
+            )
           ],
         ),
       ),

@@ -15,10 +15,10 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(10),
-      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.only(top: 10, right: 10, left: 10),
+      padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(30)),
+          color: Colors.white, borderRadius: BorderRadius.circular(20)),
       child: TextFormField(
           onChanged: onChange,
           // ignore: body_might_complete_normally_nullable
@@ -29,6 +29,8 @@ class CustomTextField extends StatelessWidget {
           },
           style: AppTextStyles.hintTextStyle,
           decoration: InputDecoration(
+            isDense: true,
+            contentPadding: const EdgeInsets.all(18),
             enabledBorder: AppTextFieldBorderStyles.enabledBorder,
             label: Center(child: Text(label)),
             labelStyle: AppTextStyles.labelTextStyle,
