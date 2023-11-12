@@ -12,4 +12,22 @@ class AppTextStyles {
     fontSize: 22,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle secondScreenTitleTextStyle = const TextStyle(
+    color: Colors.black,
+    fontSize: 22,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle secondScreenNormalTextStyle = const TextStyle(
+    color: Colors.black,
+    fontSize: 22,
+    fontWeight: FontWeight.w300,
+  );
+  static TextStyle secondScreenSectionTextStyle = const TextStyle(
+    color: Colors.black,
+    fontSize: 22,
+  );
+  static TextStyle secondScreenHintTextStyle = const TextStyle(
+    color: Colors.black,
+    fontSize: 16,
+  );
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hotelsgo/core/text_styles.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/trapezoid_container.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/trapezoid_container.dart';
 
 class FirstScreenTitle extends StatelessWidget {
   const FirstScreenTitle({

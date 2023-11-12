@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hotelsgo/core/assets_manager.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/first_screen_title_shape.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/hotels_form_main.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/first_screen_title_shape.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/hotels_form_main.dart';
 
 class FirstScreenMainView extends StatelessWidget {
   const FirstScreenMainView({
@@ -20,14 +20,10 @@ class FirstScreenMainView extends StatelessWidget {
       ),
       child: const Column(
         children: [
-          Spacer(
-            flex: 10,
-          ),
+          Spacer(flex: 10),
           FirstScreenTitle(),
           HotelsFormMain(),
-          Spacer(
-            flex: 1,
-          )
+          Spacer(flex: 1)
         ],
       ),
     );

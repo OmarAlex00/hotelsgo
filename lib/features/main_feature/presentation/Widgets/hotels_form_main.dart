@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/find_hotels.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/hotels_form_content.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/find_hotels.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/hotels_form_content.dart';
 
 class HotelsFormMain extends StatelessWidget {
   const HotelsFormMain({

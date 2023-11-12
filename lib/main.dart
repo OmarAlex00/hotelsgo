@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotelsgo/features/main_feature/first_screen.dart';
+import 'package:hotelsgo/features/main_feature/presentation/first_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/custom_button.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/custom_date_range.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/custom_ddl.dart';
-import 'package:hotelsgo/features/main_feature/Widgets/custom_text_field.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/custom_button.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/custom_date_range.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/custom_ddl.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/custom_text_field.dart';
 
 class HotelsFormContent extends StatelessWidget {
   const HotelsFormContent({
