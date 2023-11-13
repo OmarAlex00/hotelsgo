@@ -14,13 +14,16 @@ class _PetFriendlyToggleState extends State<PetFriendlyToggle> {
   @override
   Widget build(BuildContext context) {
     return FlutterSwitch(
+      showOnOff: true,
+      inactiveTextColor: Colors.grey.shade400,
       value: isSwitch,
       onToggle: (bool value) {
         isSwitch = value;
         setState(() {});
       },
-      padding: 5,
-      valueFontSize: 25,
+      activeText: '|',
+      inactiveText: '○',
+      valueFontSize: 32,
       inactiveColor: const Color(0xffE9E9EB),
       width: 70,
       height: 45,

@@ -22,23 +22,31 @@ class CustomDateRange extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text(
-                  '2023-11-10',
-                  style: AppTextStyles.dateTextStyle,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Text('==>', style: AppTextStyles.dateTextStyle),
-                const SizedBox(
-                  width: 10,
-                ),
-                Text('2023-11-11', style: AppTextStyles.dateTextStyle),
-              ],
+            GestureDetector(
+              onTap: () {
+                showDateRangePicker(
+                    context: context,
+                    firstDate: DateTime.now(),
+                    lastDate: DateTime(2030));
+              },
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(
+                    '2023-11-10',
+                    style: AppTextStyles.dateTextStyle,
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Text('==>', style: AppTextStyles.dateTextStyle),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Text('2023-11-11', style: AppTextStyles.dateTextStyle),
+                ],
+              ),
             ),
             const Icon(
               Icons.close,
