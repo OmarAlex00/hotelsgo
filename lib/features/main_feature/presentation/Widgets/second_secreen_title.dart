@@ -10,9 +10,16 @@ class SecondScreenTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 70,
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.2),
+              offset: const Offset(0.0, 3.0),
+              blurRadius: 5.0,
+            )
+          ],
           color: Colors.white,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(8), topRight: Radius.circular(8))),
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Row(

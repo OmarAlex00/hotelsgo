@@ -13,7 +13,7 @@ class HotelsFormContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CustomTextField(label: 'Select city', placeholder: 'Select a city'),
+        CustomTextField(placeholder: 'Select city'),
         const CustomDateRange(),
         const CustomDDL(),
         const CustomButton(),

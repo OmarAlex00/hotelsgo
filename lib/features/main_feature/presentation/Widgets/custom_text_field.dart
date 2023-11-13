@@ -4,12 +4,7 @@ import 'package:hotelsgo/core/text_styles.dart';
 
 // ignore: must_be_immutable
 class CustomTextField extends StatelessWidget {
-  CustomTextField(
-      {super.key,
-      required this.label,
-      required this.placeholder,
-      this.onChange});
-  final String label;
+  CustomTextField({super.key, required this.placeholder, this.onChange});
   final String placeholder;
   Function(String)? onChange;
   @override
@@ -27,15 +22,16 @@ class CustomTextField extends StatelessWidget {
               return 'This field is Required';
             }
           },
-          style: AppTextStyles.hintTextStyle,
+          style: AppTextStyles.labelTextStyle,
+          textAlign: TextAlign.center,
           decoration: InputDecoration(
             isDense: true,
-            contentPadding: const EdgeInsets.all(18),
+            contentPadding:
+                const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             enabledBorder: AppTextFieldBorderStyles.enabledBorder,
-            label: Center(child: Text(label)),
-            labelStyle: AppTextStyles.labelTextStyle,
             hintText: placeholder,
-            hintStyle: AppTextStyles.hintTextStyle,
+            hintStyle: AppTextStyles.labelTextStyle
+                .copyWith(color: const Color(0xff1669B9).withOpacity(.7)),
             border: AppTextFieldBorderStyles.enabledBorder,
           )),
     );

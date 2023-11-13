@@ -10,7 +10,6 @@ class HotelsFormMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * .355,
       width: MediaQuery.of(context).size.width * .9,
       decoration: BoxDecoration(
           color: const Color(0xffEC8B24),
@@ -30,6 +29,9 @@ class HotelsFormMain extends StatelessWidget {
                 ),
                 borderRadius: BorderRadius.circular(16)),
             child: const HotelsFormContent(),
+          ),
+          const SizedBox(
+            height: 5,
           ),
           const FindHotelsButton(),
         ],

@@ -7,23 +7,24 @@ class FindHotelsButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 100),
-      child: Row(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Text(
-            'find hotels',
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
-          Icon(
-            Icons.search,
-            color: Colors.white,
-            size: 50,
-          )
-        ],
-      ),
+    return const Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          'find hotels',
+          style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        Icon(
+          Icons.search,
+          color: Colors.white,
+          size: 43,
+        )
+      ],
     );
   }
 }

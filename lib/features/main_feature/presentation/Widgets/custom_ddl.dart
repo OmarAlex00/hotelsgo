@@ -26,16 +26,5 @@ class CustomDDL extends StatelessWidget {
             style: AppTextStyles.labelTextStyle,
           )),
     );
-    // return DropdownButton(
-    //   icon: const Icon(Icons.expand_more),
-    //   items: const [
-    //     DropdownMenuItem(
-    //       child: Text('Select Nationality'),
-    //     )
-    //   ],
-    //   onChanged: (value) {},
-    //   style: AppTextStyles.labelTextStyle,
-    //   padding: const EdgeInsets.only(right: 15, left: 20, bottom: 15),
-    // );
   }
 }
