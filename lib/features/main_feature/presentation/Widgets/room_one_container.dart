@@ -24,9 +24,15 @@ class Room1Container extends StatelessWidget {
             style: AppTextStyles.secondScreenSectionTextStyle,
           ),
           const SizedBox(height: 25),
-          const HotelFormRow(title: 'Adults', number: 4),
+          const HotelFormRow(
+            title: 'Adults',
+            min: 0,
+          ),
           const SizedBox(height: 25),
-          const HotelFormRow(title: 'Children', number: 2),
+          const HotelFormRow(
+            title: 'Children',
+            min: 0,
+          ),
           const SizedBox(height: 25),
           const AgeOfChildRow(),
           const SizedBox(height: 25),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/apply_button.dart';
 import 'package:hotelsgo/features/main_feature/presentation/Widgets/number_of_rooms_row.dart';
 import 'package:hotelsgo/features/main_feature/presentation/Widgets/pet_friendly_sections.dart';
 import 'package:hotelsgo/features/main_feature/presentation/Widgets/room_one_container.dart';
@@ -16,7 +17,9 @@ class SecondScreenContent extends StatelessWidget {
         SecondScreenTitle(),
         NumberOfRoomsRow(),
         Room1Container(),
-        PetFriendlySection()
+        PetFriendlySection(),
+        Spacer(),
+        ApplyButton()
       ],
     );
   }

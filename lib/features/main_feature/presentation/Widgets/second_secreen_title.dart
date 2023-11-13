@@ -27,9 +27,14 @@ class SecondScreenTitle extends StatelessWidget {
             ),
           ),
           const Spacer(flex: 1),
-          const Icon(
-            Icons.close,
-            size: 30,
+          GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: const Icon(
+              Icons.close,
+              size: 30,
+            ),
           )
         ],
       ),

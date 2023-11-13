@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hotelsgo/core/custom_box_decoration.dart';
 import 'package:hotelsgo/core/text_styles.dart';
+import 'package:hotelsgo/features/main_feature/presentation/Widgets/pet_freindly_toggle.dart';
 
 class PetFriendlySection extends StatelessWidget {
   const PetFriendlySection({
@@ -18,6 +19,8 @@ class PetFriendlySection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
@@ -26,16 +29,29 @@ class PetFriendlySection extends StatelessWidget {
                     'Pet-friendly',
                     style: AppTextStyles.secondScreenNormalTextStyle,
                   ),
-                  const Icon(Icons.info_outline)
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  const Tooltip(
+                      triggerMode: TooltipTriggerMode.tap,
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      message: 'Allow pets ?',
+                      child: Icon(Icons.info_outline))
                 ],
+              ),
+              const SizedBox(
+                height: 5,
               ),
               Text(
                 'Only shows stays that allow pets',
                 style: AppTextStyles.secondScreenHintTextStyle,
-              )
+              ),
             ],
           ),
-          ElevatedButton(onPressed: () {}, child: const Text(''))
+          const PetFriendlyToggle()
         ],
       ),
     );

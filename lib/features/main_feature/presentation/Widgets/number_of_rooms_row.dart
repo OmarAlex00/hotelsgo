@@ -14,7 +14,10 @@ class NumberOfRoomsRow extends StatelessWidget {
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.symmetric(horizontal: 20),
       height: 70,
-      child: const HotelFormRow(title: 'Rooms', number: 1),
+      child: const HotelFormRow(
+        title: 'Rooms',
+        min: 1,
+      ),
     );
   }
 }
